@@ -21,8 +21,8 @@ int main()
         float valueY = Yaxis.read(); //Read Y axis
         float valueZ =Zaxis.read(); //Read Z axis 
         
-        printf("X axis: %f, Y axis: %f, Z axis: %f \n", valueX,valueY,valueZ);
-        printf("\n");
+        printf("X axis: %f, Y axis: %f, Z axis: %f \n", valueX,valueY,valueZ); //print values of X Y Z
+        printf("\n"); //new line 
          thread_sleep_for(WAIT_TIME);
 
     }
