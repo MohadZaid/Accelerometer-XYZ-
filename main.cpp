@@ -7,9 +7,9 @@
 
 #define WAIT_TIME 1000 //msec
 
-AnalogIn Xaxis(PA_0);
-AnalogIn Yaxis(PA_1);
-AnalogIn Zaxis(PA_4);
+AnalogIn Xaxis(PA_0); // X axis
+AnalogIn Yaxis(PA_1); // Y axis 
+AnalogIn Zaxis(PA_4); // Y axis
 
 
 
@@ -17,9 +17,9 @@ int main()
 {
     while (true)
     {
-        float valueX = Xaxis.read();
-        float valueY = Yaxis.read();
-        float valueZ =Zaxis.read();
+        float valueX = Xaxis.read(); //Read X axis
+        float valueY = Yaxis.read(); //Read Y axis
+        float valueZ =Zaxis.read(); //Read Z axis 
         
         printf("X axis: %f, Y axis: %f, Z axis: %f \n", valueX,valueY,valueZ);
         printf("\n");
